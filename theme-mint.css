@@ -1,0 +1,358 @@
+/* CSS Document */
+
+/* Mint Color Palette 
+
+	Primary 1 - P1 - rgb(104,127,107) - #687f6b
+	Primary 2 - P2 - rgb(85,104,86) - #556856  *******modern stories nav hover
+	Primary 3 - P3 - rgb(37,45,37) - #332A23     *******modern stories nav bg
+	Primary 4 - P4 - rgb(54,64,55) - #364037
+	
+	Secondary 1 - S1 - rgb(190,230,195) - #bee6c3
+	Secondary 2 - S2 - rgb(171, 131, 117) - #AB8375
+	Secondary 3 - S3 - rgb(213,255,217) - #d5ffd9
+	
+	Tertiary 1 - T1 - rgb(209, 197, 158) - #D1C59E ***** OBITS BG
+	Tertiary 2 - T2 - rgb(232, 230, 207) - #E8E6CF *****ASSOCIATIONS BG, DO NOT CHANGE
+	Tertiary 3 - T3 - rgb(244, 243, 231) - #F4F3E7 *****NOT BEING USED
+	
+	Accent 1 - A1 - rgb(158,191,160) - #9ebfa0
+	Accent 2 - A2 - rgb(104,127,107) - #687f6b
+	Accent 3 - A3 - rgb(118,141,120) - #768d78
+
+End Mint Color Palette */
+
+.comp3.mint .mainnav {
+	background-color: rgb(104,127,107);
+}
+
+/* Logo */
+.mint .brand-block { background-color: rgb(190,230,195); } 
+.brand-block .logo { margin-top:10px; }
+.brand-block .logo h1 { color:rgb(54,64,55); }
+.brand-block .logo h2 { color:rgb(104,127,107); }
+/* .mint div.ribbon { background:transparent url(../images/brand-ribbon-mint.png) center bottom no-repeat; } */
+
+/* Theme-specific buttons */
+/* assumes use of bootstrap default btn styles */
+
+.btn-theme { 
+	color:rgb(255, 255, 255);
+	background-color:rgb(104,127,107); /* P1 */
+	border-color:rgb(104,127,107); /* P1 */
+}
+.btn-theme:hover, .btn-theme:active, .btn-theme:focus { 
+	color:rgb(255, 255, 255);
+	background-color:rgb(37,45,37); /* P3 */
+	border-color:rgb(37,45,37); /* P3 */
+}
+.btn-footer { 
+	color:rgb(255, 255, 255);
+	background-color:rgb(190,230,195); /* S1 */
+	border-color:rgb(190,230,195); /* S1 */
+}
+.icons .btn-footer { 
+	color:rgb(255, 255, 255);
+	background-color:rgb(104,127,107); /* P1 */
+	border-color:rgb(104,127,107); /* P1 */
+}
+
+.btn-footer:hover, .btn-footer:active, .btn-footer:focus { 
+	color:rgb(255, 255, 255);
+	background-color:rgb(213,255,217); /* S3 */
+	border-color:rgb(213,255,217); /* S3 */
+}
+.icons .btn-footer:hover, .icons .btn-footer:active, .icons .btn-footer:focus{ 
+	color:rgb(255, 255, 255);
+	background-color:rgb(37,45,37); /* P3 */
+	border-color:rgb(37,45,37); /* P3 */
+}
+/* navigation drop down */
+
+.mainnav .dropdown-menu {
+	background-color: rgb(104,127,107) !important; /* P1 */
+	border: 1px solid rgb(37,45,37) !important; /* P3 */
+}
+.mainnav ul.list-inline li ul.dropdown-menu li {
+	background-color:transparent !important;
+}
+.mainnav ul.list-inline li ul.dropdown-menu li a {
+	color: rgb(255, 255, 255) !important;
+	background-color:transparent !important;
+	-webkit-border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	border-radius: 0 !important;
+	background: transparent !important;
+	background-image: none !important;
+ 	filter: none !important;
+}
+.mainnav ul.list-inline li ul.dropdown-menu li a:hover {
+	color: rgb(255, 255, 255) !important;
+	background-color: rgba(54,64,55, 0.5) !important;
+	background: rgb(37,45,37)\0!important;   /* P3 Color - Conditional IE8 Hack */
+	background-image:none !important;
+}
+
+/*P1*/
+
+.mint footer, .mint .search {
+	background-color: rgb(104,127,107);
+}
+.mint .welcome-subtitle {
+	color: rgb(104,127,107);
+}
+span.viewall {
+	font-size: 16px;
+	font-style: italic;
+}
+/*Transparency for main nav @ 90% */
+.comp1.mint .mainnav {
+	/* bg gradient generated with colorzilla - http://www.colorzilla.com/gradient-editor/ */
+	background: -moz-linear-gradient(top, rgba(104,127,107, 0.92) 0%, rgba(37,45,37, 0.92) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(104,127,107, 0.92)), color-stop(100%, rgba(37,45,37, 0.92))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(104,127,107, 0.92) 0%, rgba(37,45,37, 0.92) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(104,127,107, 0.92) 0%, rgba(37,45,37, 0.92) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(104,127,107, 0.92) 0%, rgba(37,45,37, 0.92) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(104,127,107, 0.92) 0%, rgba(37,45,37, 0.92) 100%); /* W3C */
+ 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb3a526b', endColorstr='#eb28394b', GradientType=0 ); /* IE6-9 */
+	/* box shadow - http://css3gen.com/box-shadow/ */ 
+	-webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+
+	box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+	/* border */
+	/*
+	border-top: 1px solid rgb(73,60,50);
+	border-bottom: 1px solid rgb(73,60,50);
+	*/
+}
+.comp1.homepage.mint .mainnav {
+	/* Comp 1 .mainnav is transparent - colors defined in .faux-mainnav */
+		/*
+		border-top: 1px solid transparent;
+		border-bottom:1px solid transparent;
+		*/
+	background-color: transparent;
+	background: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border: none;
+}
+.comp2.mint .mainnav {
+	background:rgb(37,45,37) url(../images/pattern-crosshatch-mint.jpg) 0 0 repeat;
+}
+.comp1.mint .faux-mainnav {
+	/* bg gradient generated with colorzilla - http://www.colorzilla.com/gradient-editor/ */
+	background: -moz-linear-gradient(top, rgba(104,127,107, 0.92) 0%, rgba(37,45,37, 0.92) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(104,127,107, 0.92)), color-stop(100%, rgba(37,45,37, 0.92))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(104,127,107, 0.92) 0%, rgba(37,45,37, 0.92) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(104,127,107, 0.92) 0%, rgba(37,45,37, 0.92) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(104,127,107, 0.92) 0%, rgba(37,45,37, 0.92) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(104,127,107, 0.92) 0%, rgba(37,45,37, 0.92) 100%); /* W3C */
+ 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb3a526b', endColorstr='#eb28394b', GradientType=0 ); /* IE6-9 */
+	/* box shadow - http://css3gen.com/box-shadow/ */ 
+	-webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+	/* border */
+	/*
+	border-top: 1px solid rgb(73,60,50);
+	border-bottom: 1px solid rgb(73,60,50);
+	*/
+}
+
+.comp4.mint .mainnav {
+	background-color:rgb(104,127,107);
+}
+.comp4.homepage.mint .mainnav {
+	background-color: rgba(104,127,107, 0.80);
+	/* box shadow - http://css3gen.com/box-shadow/ */ 
+	-webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+	border: none;
+}
+
+.comp5.mint .mainnav {
+	background-color:rgb(104,127,107);
+}
+.comp5.homepage.mint .mainnav {
+	background-color: rgba(104,127,107, 0.80);
+	/* box shadow - http://css3gen.com/box-shadow/ */ 
+	-webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+	border: none;
+}
+
+/*P2*/
+
+.comp3.mint .mainnav nav ul {
+	font-size:0;
+	background-color: rgba(37,45,37, .5);
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+.comp3.mint .mainnav nav ul li a:hover {
+	background-color: rgb(85,104,86);
+	color: rgb(255, 255, 255);
+}
+.comp3.mint .mainnav nav ul li:first-child a {
+	-webkit-border-radius: 5px 0 0 0;
+	-moz-border-radius: 5px 0 0 0;
+	border-radius: 5px 0 0 0;
+}
+.comp3.mint .mainnav nav ul li:last-child a {
+	-webkit-border-radius: 0 5px 0 0;
+	-moz-border-radius: 0 5px 0 0;
+	border-radius: 0 5px 0 0;
+}
+.comp3.mint .mainnav nav ul li.active a {
+	background-color: rgb(85,104,86);
+	color: rgb(37,45,37);
+	text-shadow:none;
+}
+
+/*P3*/
+
+/*P4*/
+.mint .utilitynav {
+	background-color: rgb(54,64,55);
+}
+.comp1.mint .mainnav ul.list-inline li.active a {
+	background-color: rgba(54,64,55, 0.5);
+	background: rgb(37,45,37)\0;   /* P3 Color - Conditional IE8 Hack */
+}
+.comp1.mint .mainnav ul.list-inline li a:hover {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	background-color: rgba(54,64,55, 0.5);
+	background: rgb(37,45,37)\0;   /* P3 Color - Conditional IE8 Hack */
+}
+.comp4.mint .mainnav ul.list-inline li.active a {
+	background-color: rgba(54,64,55, 0.5);
+	background: rgb(37,45,37)\0;   /* P3 Color - Conditional IE8 Hack */
+}
+.comp4.mint .mainnav ul.list-inline li a:hover {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	background-color: rgba(54,64,55, 0.5);
+	background: rgb(37,45,37)\0;   /* P3 Color - Conditional IE8 Hack */
+}
+.comp5.mint .mainnav ul.list-inline li.active a {
+	background-color: rgba(54,64,55, 0.5);
+	background: rgb(37,45,37)\0;   /* P3 Color - Conditional IE8 Hack */
+}
+.comp5.mint .mainnav ul.list-inline li a:hover {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	background-color: rgba(54,64,55, 0.5);
+	background: rgb(37,45,37)\0;   /* P3 Color - Conditional IE8 Hack */
+}
+.mint .join {
+	background-color: rgb(190,230,195);
+}
+
+/* S1 TABS ON FCC*/
+.comp2.mint .mainnav ul.list-inline li a {
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+	background: rgb(69,81,70); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(69,81,70, 0.92) 0%, rgba(54,64,55, 0.92) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(69,81,70, 0.92)), color-stop(100%, rgba(54,64,55, 0.92))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(69,81,70, 0.92) 0%, rgba(54,64,55, 0.92) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(69,81,70, 0.92) 0%, rgba(54,64,55, 0.92) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(69,81,70, 0.92) 0%, rgba(54,64,55, 0.92) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(69,81,70, 0.92) 0%, rgba(54,64,55, 0.92) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#874d39', endColorstr='#512e22', GradientType=0 ); /* IE6-9 */
+}
+.comp2.mint .mainnav ul.list-inline li.active a, .comp2.mint .mainnav ul.list-inline li a:hover {
+	color: rgb(104,127,107);
+	text-decoration: none;
+	background-image: url(../images/hatch-bg.jpg);
+	text-shadow:none;
+}
+.comp2.mint .horizontal-obits, .comp3.mint .horizontal-obits {
+	background-color: rgb(209, 197, 158);
+}
+/*T2*/
+
+/* wlpp-301 more engaging hover */
+.horizontal-obits a .obit:hover, a .vertobit:hover {background-color: #CFCDB8;}
+.horizontal-obits a:hover .obit .ornames, a:hover .vertobit .ornames, .horizontal-obits a:focus .obit .ornames, a:focus .vertobit .ornames {text-decoration: underline;}
+
+.mint .associations {
+	background-color: rgb(232, 230, 207);
+}
+.comp2 .horizontal-obits {
+	background-color: rgb(209, 197, 158);
+}
+/*A1*/
+
+.mint .herobanner .action button {
+	background-color: rgb(158,191,160);
+	text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.5);
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: 0px 4px 0px rgba(118,141,120,1), 0px 4px 25px rgba(0,0,0,.7);
+	-moz-box-shadow: 0px 4px 0px rgba(118,141,120,1), 0px 4px 25px rgba(0,0,0,.7);
+	box-shadow: 0px 4px 0px rgba(118,141,120,1), 0px 4px 25px rgba(0,0,0,.7);
+	border: 1px solid rgb(104,127,107);
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 24px;
+	color: rgb(255, 255, 255);
+	padding: 10px;
+	position: relative;
+}
+.mint .herobanner .action button:hover {
+	background-color: rgb(104,127,107);
+}
+
+.mint .obit-searchbar .search-button button {
+	background-color: rgb(158,191,160);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid rgb(158,191,160);
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 20px;
+	color: rgb(255, 255, 255);
+	padding: 6px 12px;
+	position: relative;
+}
+.mint .obit-searchbar .search-button button:hover {
+	background-color: rgb(104,127,107);
+}
+
+.fa-lock, .fa-search, .callout.join .fa, footer a .fa {
+	color: rgb(158,191,160);
+}
+
+.join div {color:rgb(54,64,55) !important} /* Button text color, if needed */
+
+a.btn.btn-primary.btn-footer {color:rgb(54,64,55) !important}  /* admin login text color, if needed */
+
+/* Theme-Specific Imagery */
+
+.comp4 #carousel-hero .carousel-inner {
+	background-image:url(../images/herobanner/hero-bg-photopile-sepia.jpg);
+}
+.comp5 #carousel-hero .carousel-inner {
+	background-image:url(../images/herobanner/hero-bg-wallpaper-mint.jpg);
+	background-repeat:repeat-x;
+	background-size:auto 90%;
+	background-color:#e8e6cf;
+	overflow:hidden;
+}
+.comp5 .photoframe .frame {
+	background-image:url(../images/herobanner/hero-frame05.png);
+}
+
+@media (max-width: 1199px) {
+	.comp5 .photoframe .frame {
+	background-image:url(../images/herobanner/hero-frame05-437.png);
+}
+}

@@ -1,0 +1,556 @@
+/* CSS Document */
+
+/* Global */
+
+body {
+	color:rgb(0, 0, 0);
+	font-family:'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	background-color:rgb(255,255,255);
+}
+
+p {
+	/*
+	font-size:1.5em;
+	line-height:19px;
+	*/
+	font-size:1.1em;
+}
+
+a, .obit a  {
+	color:rgb(0,102,153);
+}
+
+ul a {
+	color:rgb(255,255,255);
+}
+a.sitelink {
+	font-style:italic;
+}
+
+h1 {
+	margin:35px 0 18px 0;
+	font-size:2.2em;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	display:inline-block;
+}
+
+h2 {
+	font-size:1.8em;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+h3 {
+	font-size:1.6em;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+h4 {
+	margin-top:10px;
+	font-size:1.5em;
+	font-style:italic;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+h5 {
+	display:inline-block;
+	margin:0 0 10px 0;
+	font-size:1.5em;
+	font-family:'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+div.welcomecontent p img, div.tab-pane.active p img, div.content-item p img, div.welcomecontent p a img, div.tab-pane.active p a img, div.content-item p a img {max-width: 100%; height: auto; display: block} /* image gallery on homepage, content pages responsive */
+
+.textcenter {
+	text-align:center;
+}
+
+.container { min-width:992px !important; }
+
+/* Logo */
+.brand-block {
+	position:absolute;
+	z-index:30;
+	padding:15px;
+	min-width:150px;
+	min-height:100px;
+	text-align:center;
+}
+.brand-block .logo { margin-top:10px; }
+.brand-block .logo h1 {
+	margin: 0;
+	font-size: 2.2em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	display: block;
+	font-weight: 300;
+	line-height: 1.1;
+}
+.brand-block .logo h2 {
+	margin: 0;
+	font-size: 1.2em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	display: block;
+	font-weight: 100;
+	line-height: 1.1;
+}
+.ribbon {
+	position:absolute;
+	z-index:30;
+	width:194px;
+	min-height:110px;
+	text-align:center;
+}
+.ribbon .logo {
+	margin:15px auto 35px auto;
+}
+.logo img {
+	max-width:140px;
+}
+
+/* Utitlity Nav Begin */
+.utilitynav {
+	position:relative;
+	height:30px;
+	overflow:visible;	
+	font-size:0.9em;
+}
+
+.utilitynav .utilityphone {
+	color:rgb(209, 197, 158) !important;
+}
+
+.utilitynav nav {
+	text-align:right;
+}
+
+.utilitynav a {
+	color:rgb(255,255,255);
+}
+
+.utilitynav .list-inline {
+	margin:0;
+	padding-top:5px;
+}
+
+
+/* Utility Nav End */
+
+/* Main Nav Begin */
+.mainnav {
+	text-align:right;
+	width:100%;
+}
+.mainnav .fa {
+	font-size:1.4em;
+	line-height:0.9em;
+}
+@media (max-width: 992px) {
+	.mainnav .fa {
+		font-size:1.1em;
+	}
+}
+
+/* Drop Downs */
+
+.caret {
+	border-top-color:#FFF;
+	border-bottom:3px dotted transparent;
+}
+.dropdown-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+	display: none;
+	float: left;
+	min-width: 160px;
+	padding: 0;
+	margin: 2px 0 0;
+	font-size: 14px;
+	list-style: none;
+	/* colors in theme css */
+	border-radius: 8px !important;
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+	background-clip: padding-box;
+}
+.mainnav ul.list-inline li ul.dropdown-menu li {
+	height:auto !important;
+	text-align:left;
+}
+.mainnav ul.list-inline li ul.dropdown-menu li a {
+	font-size: 16px;
+	font-weight: 300;
+	text-transform: none !important;
+	height: auto !important;
+	padding: 15px 10px;
+	text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.7);
+	color: rgb(255,255,255);
+	display:block;
+}
+
+/* Main Nav End */
+
+/* Hero Banner */
+
+#carousel-hero .carousel-control .fa {
+	position:absolute;
+	top:220px;
+	font-size:40px
+}
+#carousel-hero .carousel-control .fa-chevron-circle-left { left:15px; }
+#carousel-hero .carousel-control .fa-chevron-circle-right { right:15px; }
+
+/* End Hero Banner */
+
+/* Recent Horizontal Obits */
+
+.horizontal-obits {
+	padding:20px 0;
+}
+
+span.viewall {
+	margin-left:15px;
+	font-size:1.6em;
+	font-style:italic;
+}
+
+.horizontal-obits .obit {
+	margin:20px 15px;
+	padding:10px;
+	width:160px;
+	background-color:rgb(255,255,255);
+	float:left;	
+	line-height:20px;
+	min-height:235px;
+	position:relative;
+	overflow:visible;
+}
+.horizontal-obits .obit img {
+	max-width:100%;
+}
+
+.obit-header {
+	margin: -5px 0px 13px 0px;
+	font-size: 2.2em;
+	font-family: Georgia,"Times New Roman",Times,serif;
+	display: inline-block;
+}
+
+.obit-shadow {
+	position:absolute;
+	bottom:-29px;
+	left:-15px;;
+	width:188px;
+	height:29px;
+	background:url(../images/obit-shadow.png) 0 -9px no-repeat;
+}
+
+.obit p {
+	margin-top:10px;
+}
+
+.obit a {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:1.0em;
+}
+
+.obit_name {
+	font-size:24px;
+}
+
+.obit:last-child {
+	margin-right:0;
+}
+
+.obit .icons {
+	margin-top:30px;
+	text-align:center;
+}
+
+.obit .icons img {
+	margin-right:8px;
+}
+
+.obit .icons img:last-child {
+	margin-right:0;
+}
+
+.obitslider ul li {
+	margin-right:35px;
+}
+
+#carousel-obit .carousel-control {
+	background-image: none;
+	width: auto;
+}
+#carousel-obit .carousel-control .fa {
+	position:absolute;
+	top:125px;
+	font-size:40px;
+}
+#carousel-obit .carousel-control .fa-chevron-circle-left { left:-35px; }
+#carousel-obit .carousel-control .fa-chevron-circle-right { right:-35px; }
+
+@media (max-width: 1199px) {
+	.horizontal-obits .carousel-inner {
+		margin-left:25px;
+	}
+
+	.horizontal-obits .obit {
+		margin:20px 5px;
+		padding:10px;
+		width:140px;
+		font-size:1.0em;
+	}
+	
+	.obit-shadow {
+		left:-25px;
+	}
+	
+	.obit p {
+		margin-top:15px;
+	}
+	
+	.obit a {
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:1.0em;
+	}
+	.obit .icons img {
+		margin-right:4px;
+	}
+	
+	/* right control is further from the edge to account for iPad scrollbar */
+	.horizontal-obits a.left.carousel-control { left:25px; }
+	.horizontal-obits a.right.carousel-control { right:35px; }
+	
+}
+
+/* End Recent Obits */
+
+/* Welcome Message 8-col */
+.welcome {
+	margin:30px 0;
+}
+.welcomecontent {
+	border:1px solid rgb(229,225,216);
+	padding:25px;
+}
+
+.welcome-image {
+	margin:20px;
+	max-width:50%;
+}
+/* End Welcome Message 8-col */
+
+/* Begin Welcome-Obits side-by-side */
+
+.vertical-welcome-obits {
+	padding:30px 0;
+}
+.vertical-welcome-obits h1 {
+	margin-top:0;
+	font-size:2.4em;
+}
+.vertical-welcome-obits .welcomecontent {
+	margin:15px 0 0 0;
+	padding: 20px;
+	height:600px;
+	border: 2px solid rgb(209, 197, 158);
+	background-color: rgb(255, 255, 255);
+	overflow:scroll;
+}
+.vertical-welcome-obits .welcomecontent h1 {
+	margin-top:0;
+	font-size:1.8em;
+	line-height:1.2em;
+}
+.vertical-welcome-obits .welcomecontent h4 {
+	font-size:1.4em;
+	line-height:1.2em;
+}
+
+.vertical-welcome-obits .verticalobits {
+	margin:15px 0 0 0;
+	padding: 20px;
+	height:600px;
+	border: none;
+	background-color: rgb(209, 197, 158);
+	overflow:scroll;
+}
+.covershadow {
+	height:100px;
+	background:url(../images/cover-shadow.png) repeat-x;
+	z-index:99;
+	position:absolute;
+	top:-140px;
+	width:100%;
+}
+.vertobit {
+	padding:10px;
+	margin-bottom:15px;
+	background-color:rgb(255,255,255);
+	position:relative;
+	float:left;
+}
+.vertobit .shadow {
+	position:absolute;
+	left:0;
+	bottom:-15px;
+	width:470px;
+	height:15px;
+	background:transparent url(../images/vertobitshadow.png) 0 -7px no-repeat;
+}
+.vertobit img {
+	margin-right:10px;
+	width:120px;
+}
+.vertobit h4 {
+	margin:0;
+	font-size:1.3em;
+	font-style:normal;
+}
+
+@media (max-width: 1199px) {
+
+	.vertobit { font-size:1em; }
+	.vertobit .shadow { display:none; }
+
+}
+
+/* End Welcome-Obits side-by-side */
+
+/* Callouts 4-col */
+
+.callout { margin-bottom: 15px; }
+
+.search, .join {
+	padding:5px;
+}
+
+.search div{
+	background-color:rgb(255,255,255);
+	
+}
+
+.search input[type=text] {
+	font-size:2.0em;
+	color:rgb(153,153,153);
+	font-style:italic;
+	width:89%;
+	border:none;
+	padding:10px;
+}
+
+.search button {
+	border:none;
+	background:none;
+}
+
+.photobg div.outer {
+	background: rgba(0, 0, 0, 0.2);
+	padding:5px;
+}
+
+.join div, .photobg div div {
+	border: 2px solid white;
+	padding:10px;
+	color:rgb(255,255,255);
+}
+
+.photobg div div {
+	padding-top:55px;
+}
+
+.photobg div div p {
+	font-size:1.5em;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-style:italic;
+}
+
+.join div{
+	text-align:center;	
+	font-style:italic;
+	font-size:1.5em;
+}
+
+.rose {
+	background:url(../images/rose-bg.jpg) no-repeat;
+}
+
+.couple {
+	background:url(../images/couple-bg.jpg) no-repeat;
+}
+
+/* End Callouts 4-col*/
+
+/* Associations Begin */
+
+.assoc-icons {
+	margin:25px 0;	
+}
+
+.assoc-icons img {
+	margin:0 20px;	
+}
+
+.assoc-icons div.assoc-name {
+	margin:auto 20px;
+	vertical-align: middle;
+	display: inline-block;	
+}
+
+.assoc-icons div.assoc-name div.assoc-txt {
+	width: 100px;
+	word-wrap: normal;
+}
+
+/* Associations End */
+
+/* Footer Begin */
+
+footer {
+	padding:20px 0;
+	color:rgb(209, 197, 158);
+	/*font-size:1.5em;
+	line-height:32px;*/
+	font-size:1.1em;
+	line-height:1.8em;
+}
+
+footer a {
+	color:rgb(232, 230, 207);
+}
+footer a:hover {
+	color:rgb(232, 230, 207);
+	text-decoration:underline;
+}
+footer .nav > li > a {
+	position: relative;
+	display: inline;
+	color:rgb(232, 230, 207);
+	padding: 0;
+}
+footer .nav > li > a:hover {
+	text-decoration:underline;
+	background-color:transparent;
+}
+
+li.social a:first-child {
+	margin-left:0;
+}
+
+li.social a {
+	margin:10px 0 10px 5px;
+}
+
+.copyright p {
+	margin-top:15px;
+	font-size:0.9em;
+}
+.copyright .login {
+	margin-top: 10px;
+	text-align:right;
+}
+
+/* Footer End */
+

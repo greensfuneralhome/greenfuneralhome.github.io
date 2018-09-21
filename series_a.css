@@ -1,0 +1,6 @@
+/* these exist to fix specificity for elements 
+ * */
+/* add .override-a to the div that has .tab-pane (just using .tab-pane messes with too much, including merchandise) */
+div.tab-content div.override-a li {
+	background: none !important; border: none !important; width: 450px !important;
+}
